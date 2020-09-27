@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Page Title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+	a:link {
+	color: #008000;
+	background-color: transparent;
+	text-decoration: none;
+	}
+
+	a:visited {
+	color: #E52B50;
+	background-color: transparent;
+	text-decoration: none;
+	}
+
+	a:hover {
+	color: #E52B50;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+
+	a:active {
+	color: #734F96;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	  margin: 0;
+	}
+
+	.header {
+	  padding: 1px;
+	  text-align: left;
+	  background: white;
+	  color: #100C08;
+	}
+
+	.header h1 {
+	  font-size: 40px;
+	}
+
+	.navbar {
+	  overflow: hidden;
+	  background-color: #100C08;
+	}
+
+	.navbar a {
+	  float: left;
+	  display: block;
+	  color: #FFFAFA;
+	  text-align: center;
+	  padding: 14px 20px;
+	  text-decoration: none;
+	}
+
+	.navbar a.right {
+	  float: right;
+	}
+
+	.navbar a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+
+	.row {  
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-wrap: wrap;
+	  flex-wrap: wrap;
+	}
+
+	.side {
+	  -ms-flex: 30%;
+	  flex: 30%;
+	  background-color: #f1f1f1;
+	  padding: 20px;
+	}
+
+	.main {   
+	  -ms-flex: 80%;
+	  flex: 70%;
+	  background-color: #FFFAFA;
+	  padding: 20px;
+	}
+
+	.footer {
+	  padding: 0.1px;
+	  text-align: center;
+	  background-color: #100C08;
+	  color: white;
+	}
+
+	@media screen and (max-width: 700px) {
+	  .row {   
+	    flex-direction: column;
+	  }
+	}
+
+	@media screen and (max-width: 400px) {
+	  .navbar a {
+	    float: none;
+	    width: 100%;
+	  }
+	}
+	</style>
+	</head>
+		<body>
+			<div class="header">
+			  <h1>Peng He</h1>
+			</div>
+
+			<div class="navbar">
+			  <a href="#1">About Me</a>
+			  <a href="#2">My Research</a>
+			  <a href="#3">Key Papers</a>
+			  <a href="#4">CV</a>
+			  <a href="#5">Find Me</a>
+			</div>
+
+			<div class="row">
+			  <div class="side">
+			    <img src="pic.jpeg" style="width:100%">
+			    <br>
+			    <br>
+			    <br>
+			    <br>
+			    <a class="twitter-timeline" data-height="300" href="https://twitter.com/ecopeng?ref_src=twsrc%5Etfw">Tweets by ecopeng</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			  </div>
+
+			  <div class="main">
+			    <h2 id="1">About Me</h2>
+			    <p>Hi, welcome to my site! It's Peng here &#129320;</p>
+			    <p>I'm doing a PhD here at the <em><a href="https://www.ab.mpg.de/">Max Planck Institute of Animal Behavior</a></em> and the <em><a href="https://www.uni-konstanz.de/en/">University of Konstanz</a></em> in southwest Germany.</p>
+			    <br>
+
+			    <h2 id="2">My Research</h2>
+			    <p>The habitat environments can fundamentally affect where animals can go, thus can shape a range of ecological and evolutionary processes in populations, such as the patterns of social interactions among individuals as well as the spreads of pathogens and behaviors, etc.. My doctoral research is focusing on exploring such consequences of the physical habitat environments for social animals using theoretical approach.</p>
+			    <br>
+
+			    <h2 id="3">Key Papers</h2>
+			    <p><strong>He, P.</strong>, Montiglio, P. O., Somveille, M., Cantor, M., & Farine, D. R. (2020). The role of habitat configuration in shaping animal population processes: a framework to generate quantitative predictions. bioRxiv. doi: <a href="https://doi.org/10.1101/2020.07.30.228205">10.1101/2020.07.30.228205</a></p>
+			    <p><strong>He, P.</strong>, Maldonado-Chaparro, A. A., & Farine, D. R. (2019). The role of habitat configuration in shaping social structure: a gap in studies of animal social complexity. Behav Ecol Sociobiol. doi: <a href="https://doi.org/10.1007/s00265-018-2602-7">10.1007/s00265-018-2602-7</a></p>
+			    <p>For a full list of publications please see my <a href="https://scholar.google.com/citations?user=ElcyoCIAAAAJ&hl=en">Google Scholar</a> page.</p>
+			    <br>
+
+			    <h2 id="4">CV</h2>
+			    <p>Find my <a href="https://orcid.org/0000-0002-7176-701X"><em>Curriculum vitae</em></a>.</p>
+			    <br>
+
+			    <h2 id="5">Find Me</h2>
+			    <p><a href = "mailto: phe@ab.mpg.de">Email</a>, <a href="https://orcid.org/0000-0002-7176-701X">ORCID</a>, <a href="https://publons.com/researcher/1468799/peng-he/">Publons</a>, <a href="https://www.scopus.com/authid/detail.uri?authorId=57205645391">Scopus</a>, <a href="https://github.com/ecopeng">GitHub</a>.</p>
+			    <br>
+			  </div>
+
+			</div>
+
+			<div class="footer">
+			  <p id="5"></p>
+			</div>
+		</body>
+</html>
